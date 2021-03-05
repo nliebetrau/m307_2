@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>IT-Service-Anfrage</title>
+</head>
+
+<script>
+
+function toggle() {
+    setTimeout(2000);
+    alert("Deine Eingaben wurden in der Datenbank eingegeben.");
+
+
+}
+</script>
+<body>
+    <nav>
+        <h1>IT-Service-Anfrage</h1>
+        <p>Bitte füllen Sie dieses Formular aus und ein Mitarbeiter des IT-Service-Teams wird<br>sich in Kürze mit Ihnen in Verbindung setzen.</p>
+        <img class="logo"src="img/SBW_Logo@2x.png" alt="value" width="100" height="325">
+    </nav>
+    <main class="container">
+        <form onsubmit="toggle()">
+
+            <fieldset>
+            <div class="name">
+                <label>Name</label>
+                <input class="name1" name="name" id="name">
+                <label>Vorname</label>
+                <input class="name1" name="vorname" required id="vorname">
+            </div>
+            <div>
+                <label>E-Mail-Adresse</label>
+                <input name="mail" type="email" id="email">
+            </div>
+            <div>
+                <label>Telefonnummer</label>
+                <input name="num">
+            </div>
+        </fieldset>
+
+    <fieldset>
+
+            <div class="form-style-3">
+              <label for="kategorie"><span>Problemkategorie</span><select name="kategorie" class="select-field" id="kategorie">
+                <option value=“computer”>Computer</option>
+                <option value=“laptop”>Laptop</option>
+                <option value=“netzwerk”>Netzwerk</option>
+                <option value=“anderes”>Anderes</option>
+            </div>
+
+            <div>
+                <label>Bitte spezifizieren</label>              
+            </div>
+
+            <div>
+                <label>Bitte spezifizieren</label>
+                <input name="spez" required id="spez">
+            </div>
+
+            <div>
+                <label>Fragen & Kommentare</label>
+                <input name="fragen" id="fragen">
+            </div>
+          <div>
+                <button id="button" type="submit">Senden</button>
+          </div>
+
+        </form>
+        <table id="table" hidden>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Vorname</th>
+                    <th>Mail</th>
+                    <th>Nummer</th>
+                    <th>Kategorie</th>
+                    <th>Spezifizieren</th>
+                    <th>Fragen</th>
+
+                </tr>
+
+    	    </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </fieldset>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer> </footer>
+</html>
